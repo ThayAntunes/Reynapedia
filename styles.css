@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+/* fontes
+Mochiy Pop One
+Rowdies
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+/* cores
+#1b1b3a
+#693668
+#A74482 
+#F84AA7 
+#F7EBEC */
+
+:root {
+    --cor1: #1b1b3a;
+    --cor2: #693668;
+    --cor3: #A74482;
+    --cor4: #f84AA7;
+    --cor5: #F7EBEC;
+
+    --fontepadrão: Arial, Verdana, sans-serif;
+    --fonteheader: "Mochiy Pop One", sans-serif;
+    --fontdestaque: "Rowdies", sans-serif;
+}
+
+.header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor1));
+    margin-top: 0px;
+    min-height: 150px;
+    text-align: center;
+}
+
+.header > p {
+    font-family: var(--fontepadrão);
+    font-size: 1.2em;
+    color: var(--cor5);
+    margin: 0px;
+    max-width: 500px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow: 2px 1px 0px #b9b4b4ab;
+    margin-bottom: 0px;
+}
+
+.header > h1 {
+    color: var(--cor5);
+    font-family: var(--fonteheader);
+    padding-top: 30px;
+    margin-bottom: 0px;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px #b9b4b4ab;
+    margin-top: 0px;
+}
+
+.nav {
+    text-align: center;
+    background-color: var(--cor1);
+    margin: 0px;
+    padding: 10px;
+    box-shadow: 0px 7px 9px #1010226c;  
+}
+
+.nav > a {
+    color: var(--cor5);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+.nav > a:hover {
+    background-color: var(--cor5);
+    color: var(--cor1);
+}
+
+.main {
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: var(--cor5);
+    box-shadow: 0px 0px 10px #b9b4b4ab;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.main h1 {
+    color: var(--cor3);
+    font-family: var(--fontdestaque);
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.main h2 {
+    font-family: var(--fontdestaque);
+    color: var(--cor2);
+    font-size: 1.7em;
+    background-image: linear-gradient(to right, var(--cor4), transparent);
+    text-indent: 9px;
+}
+
+.article a {
+    text-decoration: none;
+    color: var(--cor4);
+}
+
+.main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1,1em;
+}
+
+body {
+    background-color: var(--cor3);
+    font-family: var(--fontepadrão);
+    margin: 0px;
+}
+
+.aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px #1010226c;
+    color: var(--cor5);
+    font-family: var(--fontepadrão);
+    font-size: 1.2em;
+}
+
+.aside > h3 {
+    background-color: var(--cor3);
+    color: var(--cor5);
+    padding: 10px 0px 10px 50px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.aside > ul {
+    columns: 2;
+    list-style-type: '\2714\00a0\00a0';
+    
+}
+
+.agradecimentos {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1,1em;
+}
+
+.agradecimentos a {
+    text-decoration: none;
+    color: #f84AA7;
+}
+
+.footer {
+    margin: 0px;
+    background-color: var(--cor1);
+    color: var(--cor5);
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+.footer > p {
+    margin: 0px;
+    text-align: center;
+}
+
+.footer a {
+    color: var(--cor5);
+    text-decoration: underline;
+}
+
+.footer a:hover {
+    background-color: #f84AA7;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.video {
+    display: block;
+    margin: auto;
+    background-color: var(--cor1);
+    margin: 0px -20px 30px -20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative;
+}
+
+.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.retrato {
+    width: 55%;
+    min-width: 350px;
+    display: block;
+    
+}
+
+.reynagg { 
+    margin: 0% 0% 0% 25%;
+    justify-content: center;
+    width: 50%;
+}
+
+.grande {
+    width: 90%; 
+    margin: 0% 0% 0% 5%;
+}
+
+.res {
+    display: block;
+    min-width: 350px;
+}
+
+.dub {
+    width: 70%;
+    margin: 0% 0% 0% 15%;
+}
+
+
